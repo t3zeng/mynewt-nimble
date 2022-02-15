@@ -36,6 +36,7 @@ syscfg.defs:
             - dialog_cmac       # Dialog CMAC via shared memory
             - usb               # USB
             - nrf5340           # nRF5340
+            - apollo3           # Ambiq Apollo3
 
     BLE_HCI_BRIDGE_TRANSPORT:
         description: >
@@ -116,4 +117,3 @@ syscfg.vals.'(MCU_TARGET == "DA14691" || MCU_TARGET == "DA14695" || MCU_TARGET =
 
 syscfg.vals.'(MCU_TARGET == "nRF5340_APP")':
     BLE_HCI_BRIDGE_TRANSPORT: nrf5340
-
